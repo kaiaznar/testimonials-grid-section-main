@@ -1,0 +1,151 @@
+html{
+    box-sizing: border-box;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
+}
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+
+*{
+    margin: 0;
+}
+
+/* testimonials color and text disgn general*/
+    /*Color*/
+    body{
+        background-color: #ecf2f8;
+        
+    }
+    .iCLU-big{
+        background-color: #7541c8;
+    }
+    .iCLU-small{
+        background-color: #48556a;
+    }
+    .iCLD-big{
+        background-color: #19212e;
+    }
+    .iCLD-small{
+        background-color: #ffffff;
+    }
+    .inConteiner-right{
+        background-color: #ffffff;
+    }
+
+    .iCLU-big,.iCLU-small,.iCLD-big{
+        color: #ffffff;
+    }
+    /*Color end*/
+
+    /*text sizes and opacities*/
+    .verified{
+        opacity: 50%;
+    }
+    .testimonial{
+        opacity: 70%;
+    }
+    .highlight{
+        font-weight: 600;
+    }
+
+    /*text sizes end*/
+
+    /*Genearal struture*/
+    body{
+        display: flex;
+        justify-content: center;
+    }
+    .conteiner{
+        margin: 20px;
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+    .iCLD-small,.iCLD-big,.iCLU-big,.iCLU-small,.inConteiner-right{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+    .perfil{
+        display: flex;
+        align-items: center;
+    } 
+    .personalText{
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+    }
+    .imgProfile{
+        border: 2px solid #ecf2f8;
+        border-radius: 30px;
+    }
+    .highlight,.testimonial{
+        max-width: 90%;
+    }
+    
+  
+    .perfil,.highlight,.testimonial{
+        margin-bottom: 20px;
+        z-index: 1;
+    }
+
+    .iCLD-small:hover,.iCLD-big:hover,.iCLU-big:hover,.iCLU-small:hover,.inConteiner-right:hover{
+        box-shadow: 0px 0px 37px -7px rgba(128,201,133,1);
+        transform: scale(1.1);
+    }
+    #quotesBackgroud{
+        position: absolute;
+        width: 120px;
+        align-self: flex-end;
+        z-index: 0;
+    }
+    /*Genearal struture end*/
+
+
+    /* Mobile layout*/
+    .conteiner,.inConteiner-left,.iCL-up,.iCL-down{
+        display: flex;
+        flex-direction: column;
+        
+    } 
+    
+    .conteiner{
+        width: 375px;
+    }
+
+    .iCLD-small,.iCLD-big,.iCLU-big,.iCLU-small{
+        margin-bottom: 20px;
+    }
+    /* Mobile layout end*/
+    /*Mid layout*//*Mid layout end*/
+    /*Computer layout*/
+    @media (min-width:600px){
+        .conteiner{
+            width: 1440px;
+        }
+        .conteiner,.iCL-up,.iCL-down{
+            display: flex;
+            flex-direction: row;
+            
+        } 
+        .inConteiner-left{
+            flex-basis: 80%;
+        }
+        .inConteiner-right{
+            flex-basis: 20%;
+            margin-left: 35px;
+        }
+        .iCLD-small,.iCLU-big,.inConteiner-right{
+            margin-right: 35px;
+        }
+        .iCL-up,.iCL-down{
+            flex-basis: 50%;
+        }
+        .iCLD-small, .iCLD-big{
+            margin-bottom: 0;
+        }
+    }
+   
+    /*Computer layout end*/
